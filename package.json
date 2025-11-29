@@ -1,0 +1,27 @@
+{
+	"name": "mui-mcp-codedthemes",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"format": "biome format --write",
+		"lint:fix": "biome lint --fix",
+		"start": "wrangler dev",
+		"cf-typegen": "wrangler types",
+		"type-check": "tsc --noEmit",
+		"release": "release-it"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "1.20.1",
+		"agents": "^0.2.14",
+		"zod": "^3.25.76"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.2.5",
+		"@release-it/conventional-changelog": "^10.0.1",
+		"release-it": "^19.0.5",
+		"typescript": "5.9.3",
+		"wrangler": "^4.42.0"
+	}
+}
